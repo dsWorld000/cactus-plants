@@ -5,6 +5,7 @@ import { RiShoppingCartLine } from "@remixicon/react";
 import { RiUserLine } from "@remixicon/react";
 import { RiMenuLine } from "@remixicon/react";
 import { RiCactusLine } from "@remixicon/react";
+import { Link } from "react-router-dom";
 
 const Navbar = ({setShowLogin}) => {
 
@@ -19,7 +20,7 @@ const Navbar = ({setShowLogin}) => {
   return (
     <header className="header blur-header" id="header">
       <nav className="nav container">
-        <a href="#" className="nav__logo">
+        <a href="/" className="nav__logo">
           {" "}
           <i> <RiCactusLine /></i>Cactus{" "}
         </a>
@@ -65,10 +66,12 @@ const Navbar = ({setShowLogin}) => {
             {" "}
             <RiUserLine />
           </i>
+          <Link className="cartLine" to="/cart">
           <i>
             {" "}
             <RiShoppingCartLine />
           </i>
+          </Link>
           <div onClick={toggleMenu} className="nav__toggle" id="nav-toggle">
             <i>
               <RiMenuLine />

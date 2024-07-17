@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import "./Cart.css";
-import cactus_item_list from "../../assets/assets"
+import { StoreContext } from '../../context/StoreContex';
+
 
 const Cart = () => {
+
+  const {cactus_item_list, cartItems} = useContext(StoreContext)
+
   return (
     <div className="cart">
     <div className="cart-items">
