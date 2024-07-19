@@ -20,10 +20,10 @@ const Navbar = ({setShowLogin}) => {
   return (
     <header className="header blur-header" id="header">
       <nav className="nav container">
-        <a href="/" className="nav__logo">
+        <Link to="/" className="nav__logo">
           {" "}
           <i> <RiCactusLine /></i>Cactus{" "}
-        </a>
+        </Link>
 
         <div className={`nav__menu ${isMenuOpen ? "show__menu" : ''} active-link `} id="nav-menu">
           <ul className="nav__list">

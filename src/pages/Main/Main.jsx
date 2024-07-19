@@ -1,10 +1,14 @@
 import React from 'react'
 import "./Main.css"
 import { RiArrowRightLine } from '@remixicon/react'
-import homeCactusImg from "../../assets/home-cactus.png"
+import homeCactusImg from "../../assets/home-cactus.png";
+
 
 
 const Main = () => {
+
+  
+
   return (
     <>
     <section className="home section" id="home">
