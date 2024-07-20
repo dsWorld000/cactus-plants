@@ -70,6 +70,17 @@
   }
   .cartLine{
     color: white;
+    position: relative;
+  }
+
+  .cartLine .dot{
+    position: absolute;
+    top: -4px;
+    right: -3px;
+    min-width: 7px;
+    min-height: 7px;
+    border-radius: 50%;
+    background-color: tomato;
   }
 
 

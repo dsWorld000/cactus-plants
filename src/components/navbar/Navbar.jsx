@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./Navbar.css";
 import { RiCloseLine } from "@remixicon/react";
 import { RiShoppingCartLine } from "@remixicon/react";
@@ -6,10 +6,12 @@ import { RiUserLine } from "@remixicon/react";
 import { RiMenuLine } from "@remixicon/react";
 import { RiCactusLine } from "@remixicon/react";
 import { Link } from "react-router-dom";
+import { StoreContext } from "../../context/StoreContex";
 
 const Navbar = ({setShowLogin}) => {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const {getTotalAmount} = useContext(StoreContext)
 
 
   const toggleMenu = ()=>{
@@ -67,6 +69,7 @@ const Navbar = ({setShowLogin}) => {
             <RiUserLine />
           </i>
           <Link className="cartLine" to="/cart">
+          <div className={getTotalAmount() === 0 ? "" : 'dot'}></div>
           <i>
             {" "}
             <RiShoppingCartLine />
