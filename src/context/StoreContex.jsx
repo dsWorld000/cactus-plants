@@ -28,8 +28,8 @@ const StoreContextProvider = ({ children }) => {
       if (cartItems[item] > 0) {
         const itemInfo = cactus_item_list.find(
           (product) => product.id === item);
-          
-        totalAmount += itemInfo.price * cartItems[item];
+
+        totalAmount += itemInfo * cartItems[item];
       }
     }
     return totalAmount;
