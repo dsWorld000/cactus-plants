@@ -2,6 +2,7 @@
     padding-top: 6.5rem;
     grid-template-columns: repeat(2, 1fr);
     gap: 6rem 1.5rem;
+    animation: fadeIn 1s;
   }
   
  

@@ -94,10 +94,11 @@
         background-color: hsla(228, 24%, 6%, .2);
         backdrop-filter: blur(16px);
         -webkit-backdrop-filter: blur(16px);
-        width: 80%;
+        width: 70%;
         height: 100%;
         padding: 6rem 3rem 0;
         transition: right .4s;
+        z-index: var(--z-fixed);
     }    
     }
 

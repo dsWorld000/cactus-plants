@@ -1,3 +1,7 @@
+.new__container{
+  animation: fadeIn 1s;
+}
+
 .new__data{
     text-align: center;
     margin-bottom: 5.5rem;

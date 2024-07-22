@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import "./Shop.css";
-import Care from "../Care/Care";
 import { StoreContext } from "../../context/StoreContex";
 import CactusItem from "../../components/cactusItem/CactusItem";
 
@@ -25,7 +24,6 @@ const Shop = () => {
           })}
         </div>
       </section>
-      <Care />
     </>
   );
 };

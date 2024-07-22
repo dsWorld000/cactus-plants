@@ -1,5 +1,6 @@
 import React, { useContext, useState } from "react";
 import "./Navbar.css";
+import { NavLink } from "react-router-dom";
 import { RiCloseLine } from "@remixicon/react";
 import { RiShoppingCartLine } from "@remixicon/react";
 import { RiUserLine } from "@remixicon/react";
@@ -30,29 +31,29 @@ const Navbar = ({setShowLogin}) => {
         <div className={`nav__menu ${isMenuOpen ? "show__menu" : ''} active-link `} id="nav-menu">
           <ul className="nav__list">
             <li className="nav__item">
-              <a className="nav__link" href="#">
+              <NavLink className="nav__link" to="/">
                 Home
-              </a>
+              </NavLink>
             </li>
             <li className="nav__item">
-              <a className="nav__link" href="#news">
+              <NavLink className="nav__link" to="news">
                 News
-              </a>
+              </NavLink>
             </li>
             <li className="nav__item">
-              <a className="nav__link" href="#shop">
+              <NavLink className="nav__link" to="shop">
                 Shop
-              </a>
+              </NavLink>
             </li>
             <li className="nav__item">
-              <a className="nav__link" href="#care">
+              <NavLink className="nav__link" to="care">
                 Care
-              </a>
+              </NavLink>
             </li>
             <li className="nav__item">
-              <a className="nav__link" href="#contact">
+              <NavLink className="nav__link" to="contact">
                 Contact
-              </a>
+              </NavLink>
             </li>
           </ul>
 

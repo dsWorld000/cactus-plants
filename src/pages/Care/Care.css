@@ -1,6 +1,7 @@
 .care__container{
     padding-top: 2rem;
     row-gap: 2rem;
+    animation: fadeIn 1s;
   }
   
   .care__img{

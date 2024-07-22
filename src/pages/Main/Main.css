@@ -1,6 +1,7 @@
 .home__container{
     padding-top: 2.5rem;
     row-gap: 2rem;
+    animation: fadeIn 1s;
   }
   
   .home__img{
