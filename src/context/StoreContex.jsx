@@ -26,18 +26,18 @@ const StoreContextProvider = ({ children }) => {
     let totalAmount = 0;
     for (const item in cartItems) {
       if (cartItems[item] > 0) {
-        const itemInfo = cactus_item_list.find(
-          (product) => product.id === item);
+        let itemInfo = cactus_item_list.find((product) => product.id == item);
+        console.log(itemInfo);
 
-        totalAmount += itemInfo * cartItems[item];
+        totalAmount += itemInfo.price * cartItems[item];
       }
     }
     return totalAmount;
   };
 
-  useEffect(() =>{
-    console.log(cartItems)
-  }, [cartItems])
+  useEffect(() => {
+    // console.log(cartItems);
+  }, [cartItems]);
 
   const contextValue = {
     cactus_item_list,

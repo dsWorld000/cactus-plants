@@ -20,10 +20,10 @@ const Cart = () => {
       </div>
       <br />
       <hr />
-      {cactus_item_list.map((item) => {
+      {cactus_item_list.map((item, index) => {
         if (cartItems[item.id] > 0) {
           return (
-            <div>
+            <div key={index}>
               <div className="cart-items-title cart-items-item">
                 <img src={item.image} alt="" />
                 <p>{item.title}</p>

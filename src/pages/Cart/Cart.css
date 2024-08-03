@@ -46,7 +46,8 @@
   .cart-total-details{
       display: flex;
       justify-content: space-between;
-      color: #a7a6a6;
+      /* color: #a7a6a6; */
+      color: rgb(191, 246, 246);
   }
   .cart-total hr{
       margin: 10px 0;
@@ -93,7 +94,7 @@
     max-height: 15px;
     border-radius: 50%;
     color: black;
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(252, 188, 188);
     text-align: center;
     font-weight: 700;
   }
