@@ -27,7 +27,7 @@ const StoreContextProvider = ({ children }) => {
     for (const item in cartItems) {
       if (cartItems[item] > 0) {
         let itemInfo = cactus_item_list.find((product) => product.id == item);
-        console.log(itemInfo);
+        // console.log(itemInfo);
 
         totalAmount += itemInfo.price * cartItems[item];
       }
