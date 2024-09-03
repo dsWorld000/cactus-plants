@@ -20,6 +20,7 @@ const Navbar = ({setShowLogin}) => {
   }
 
 
+
   return (
     <header className="header blur-header" id="header">
       <nav className="nav container">
@@ -30,27 +31,27 @@ const Navbar = ({setShowLogin}) => {
 
         <div className={`nav__menu ${isMenuOpen ? "show__menu" : ''} active-link `} id="nav-menu">
           <ul className="nav__list">
-            <li className="nav__item">
+            <li onClick={toggleMenu} className="nav__item">
               <NavLink className="nav__link" to="/">
                 Home
               </NavLink>
             </li>
-            <li className="nav__item">
+            <li onClick={toggleMenu} className="nav__item">
               <NavLink className="nav__link" to="news">
                 News
               </NavLink>
             </li>
-            <li className="nav__item">
+            <li onClick={toggleMenu} className="nav__item">
               <NavLink className="nav__link" to="shop">
                 Shop
               </NavLink>
             </li>
-            <li className="nav__item">
+            <li onClick={toggleMenu} className="nav__item">
               <NavLink className="nav__link" to="care">
                 Care
               </NavLink>
             </li>
-            <li className="nav__item">
+            <li onClick={toggleMenu} className="nav__item">
               <NavLink className="nav__link" to="contact">
                 Contact
               </NavLink>
